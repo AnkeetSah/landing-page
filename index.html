@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skilled e-learning landing page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family: 'Roboto', sans-serif;
+        }
+        .container{
+            
+            margin: auto;
+            width: 90vw;
+            height: auto;
+            position: relative;
+        }
+        header{
+            
+            margin-top: 30px;
+            font-weight: bolder;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+       
+        .hero-child1{
+          
+            margin-top: 50px;
+            height: 340px;
+            
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 130px;
+            
+            
+        }
+        .part1{
+            height: 80%;
+            width:420px
+        }
+        
+        .part1, .part2{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            
+        }
+        .part1 :nth-child(3){
+            /* background-image: linear-gradient(to top, #e14fad 0%, #f9d423 100%); */
+            background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
+            width: 81px;
+            padding: 10px;
+            border-radius: 25px;
+        }
+        .part2{
+            background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
+             position: relative;
+             border-radius: 100%;
+            align-items: center;
+            animation: moveUpDown 1.5s infinite alternate ease-in-out;
+            height: 400px;
+            width: 400px;
+        }
+         /* Define the keyframes for the animation */
+    @keyframes moveUpDown {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(20px);
+      }
+    }
+        .part2 img{
+            border-radius: 100%;
+               height: 300px;
+               width: 300px;
+               margin: auto;
+        }
+        .part2 div{
+            position: absolute;
+            width: 120px;
+            height: auto;
+            padding: 10px;
+        }
+        .hours, .members{
+           background: white;
+           border: none;
+           border-radius: 10px;
+           left: -40px;
+           top: 200px;
+           box-shadow: 10px 10px 10px grey;
+        }
+        .members{
+            left: 350px;
+            top: 80px;
+        }
+        .grid-container{
+            
+             padding-bottom: 50px;
+            height: 600px;
+            
+           
+        }
+        .hero-child2 div{
+           
+            height: 120px;
+            width: 190px;
+        }
+        .grid-container {
+            
+          
+            display: grid;
+            grid-template-columns: .6fr .6fr .6fr;
+            grid-template-rows:  2fr 2fr;
+            height: 800px;
+            gap: 69px 27px; /* Adjust the gap between divs as needed */
+            margin: 20px auto;
+            height: auto;
+        }
+
+        .grid-item {
+            position: relative;
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 20px;
+            border: 1px soplid;
+            box-shadow: 1px 1px 10px grey;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: start;
+            
+        }
+        
+
+        .grid-item img{
+           
+            height: 30px;
+            border-radius: 100%;
+            
+        }
+
+        .grid-item .img{
+           width: 30px;
+           height: 30px;
+           background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
+              padding: 6px;
+            /* background: white; */
+            box-shadow: 1px 1px 10px grey;
+            border-radius: 100%;
+
+top: -10px;
+        }
+        .grid-item h3{
+            color:  purple;
+        }
+
+        footer{
+            height: 70px;
+            display: flex;
+            background: rgb(7, 7, 38);
+            /* padding: 0px 10px; */
+            width: 99vw;
+           justify-content: space-around;
+           align-items: center;
+           margin: auto;
+          /* position: absolute; */
+        }
+
+        /* Media Query for 800px */
+        @media screen and (max-width: 850px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 45vw);
+               
+            }
+            .members{
+                left: 0px;
+            }
+            .hours{
+                top: 270px;
+            }
+            
+           
+           
+            .grid-container{
+                /* background: green; */
+                grid-template-columns: .48fr .48fr;
+             
+
+            }
+            .grid-item{
+                margin-left: 24px;
+            }
+            .container{
+                /* background: purple; */
+                height: auto;
+                /* width: 100vw; */
+            }
+           
+
+        }
+
+
+        @media screen and (max-width: 560px) {
+            .hero-child1{
+                flex-wrap: wrap;
+                height: auto;
+               
+            }
+            .grid-container {
+                grid-template-columns: 90vw;
+                gap: 20px 10px;
+            }
+            .grid-item{
+                height: 300px;
+            }
+            .hours{
+                top: 320px;
+                left: 190px;
+            }
+            .grid-item{
+                margin-left: 0px;
+            }
+            .part1{
+                height: 230px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header><h2>Skilled</h2> <h2 style="background: black; padding: 10px 25px; color: white; border-radius: 25px;">Get Started</h2></header>
+        <div class="hero-section">
+          <div class="hero-child1">
+           
+            <div class="part1">
+                <h1>Maximize skill, minimize budge</h1><h4>Our modern courses across a range of
+                in-demand skills will give you the knowledge you need to live the life you want.
+            </h4>
+              <h4 >Get Started</h4>
+            </div>
+
+            <div class="part2"><img src="https://parentinghealthybabies.com/app/phb-data/uploads/2021/01/web-stock-online-learning-b-x-1024.jpg" alt="">
+             <div class="hours" ><h5 style="color: gray;">Course hours</h5>
+                <h1>1,451</h1>
+            </div>
+            <div class="members" ><h5 style="color: gray;">Members</h5>
+                <h1>29k</h1>
+            </div>
+            </div>
+          </div>
+
+
+          <div class="grid-container">
+            <div class="grid-item" style="background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);">
+               <h2 style="margin-top: 20px; color: white;">Check out our  most popular courses!</h2>
+            </div>
+            <div class="grid-item"> 
+                <div class="img"><img src="https://cdn-icons-png.flaticon.com/512/6896/6896430.png" alt=""></div>
+                <h1>Animation</h1>
+                <h4 style="text-align: left;">Discover the latest animation techniques to craft compelling motion designs. Learn advanced keyframing, timing, and seamless transition strategies. Elevate your skills with 3D elements, dynamic simulations, 
+                    and special effects. Stay current with industry trends and experiment with cutting-edge motion graphics styles to captivate your audience.</h4>
+                    <br>
+                     <h3>Get Started</h3>
+            </div>
+            <div class="grid-item"><div class="img"><img src="https://cdn-icons-png.flaticon.com/512/3159/3159310.png" alt="" ></div>
+            <h1>Design</h1>
+            <h4 style="text-align: left;">Explore design trends, refine layout skills, and experiment with innovative tools. Master advanced principles for visually 
+                stunning and cohesive designs. Stay current with industry styles, push creative boundaries, and captivate audiences with your exceptional design work.</h4>
+                <br>
+                 <h3>Get Started</h3></div>
+            <div class="grid-item"><div class="img"><img src="https://cdn-icons-png.flaticon.com/512/792/792896.png" alt="" height="40px"></div>
+            <h1>photography</h1>
+            <h4 style="text-align: left;">Explore the latest in photography techniques to capture compelling visuals. Master advanced composition, lighting, and editing skills. Stay current with industry trends, experiment with innovative tools, and push creative boundaries. Elevate your photography to captivate audiences and leave a lasting impact with your stunning imagery.</h4>
+                <br>
+                 <h3>Get Started</h3></div>
+            <div class="grid-item"><div class="img"><img src="https://cdn-icons-png.flaticon.com/512/5751/5751029.png" alt=""></div>
+            <h1>Crypto</h1>
+            <h4 style="text-align: left;">
+                Dive into the dynamic world of cryptocurrency. Explore cutting-edge blockchain technology, understand market trends, and master advanced trading strategies. Stay informed on the latest developments, experiment
+                 with innovative tools, and navigate the crypto landscape with confidence. Elevate your understanding and make informed decisions in this ever-evolving financial frontier.</h4>
+                <br>
+                 <h3>Get Started</h3></div>
+            <div class="grid-item"><div class="img"><img src="https://cdn-icons-png.flaticon.com/512/639/639394.png " alt=""></div>
+            <h1>Business</h1>
+            <h4 style="text-align: left;">
+                Navigate the business landscape with expertise. Explore innovative strategies, master advanced management principles, and stay ahead of market trends. Experiment with cutting-edge tools, refine decision-making skills, and elevate your business acumen. Stay proactive
+                 in adapting to change, ensuring your business not only survives but thrives in today's dynamic environment.</h4>
+                <br>
+                 <h3>Get Started</h3></div>
+            <!-- Add more grid items as needed -->
+        </div>
+        </div>
+        
+    </div>
+    <footer><h2 style="color: white;">Skilled</h2>
+        <h2 style="color: white;padding: 10px 20px; border-radius: 25px; background: #780206;  
+                background: -webkit-linear-gradient(to right, #061161, #780206); 
+        background: linear-gradient(to right, #061161, #780206); 
+        ;">Get Started</h2></footer>
+        
+</body>
+</html>
